@@ -1,0 +1,5 @@
+$("#book_<%= book.id %> .favorite-btn").html('<%= j(render("favorites/favorite-btn", book: @book )) %>');
+<!--htmlの一部を書き換える-->
+<!--対象にするID-->
+<!--１だった時はbook_1が入る、クラス名がfavorite-btn-->-->
+<!--j=""や’といった特殊記号を処理する為のもの、escape-->
